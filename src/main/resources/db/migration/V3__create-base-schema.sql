@@ -10,13 +10,13 @@ CREATE TABLE `users` (
   `country` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '국가',
   `reportedCount` bigint(20) DEFAULT '0' COMMENT '신고당한횟수',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `users_posts`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
   `postId` bigint(20) NOT NULL COMMENT '글번호',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `posts`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -29,7 +29,7 @@ CREATE TABLE `posts`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `replies`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -42,7 +42,7 @@ CREATE TABLE `replies`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `post_reports`  (
@@ -54,7 +54,7 @@ CREATE TABLE `post_reports`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `reply_reports`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -65,7 +65,7 @@ CREATE TABLE `reply_reports`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `reportTypes`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -73,7 +73,7 @@ CREATE TABLE `reportTypes`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `daily_rank`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -84,7 +84,7 @@ CREATE TABLE `daily_rank`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `weekly_rank`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -95,7 +95,7 @@ CREATE TABLE `weekly_rank`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `monthly_rank`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -106,7 +106,7 @@ CREATE TABLE `monthly_rank`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `annualy_rank`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '아이디',
@@ -117,7 +117,7 @@ CREATE TABLE `annualy_rank`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `post_like_member`  (
@@ -127,4 +127,4 @@ CREATE TABLE `post_like_member`  (
   `createdAt` datetime NOT NULL COMMENT '생성일시',
   `updatedAt` datetime DEFAULT NULL COMMENT '수정일시',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
